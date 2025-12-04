@@ -91,32 +91,98 @@ export default function Home() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, padding: 20, backgroundColor: '#fff' },
-  title: { fontSize: 24, fontWeight: 'bold', marginBottom: 15 },
-  card: {
-    backgroundColor: '#f1f1f1', padding: 15,
-    borderRadius: 8, marginBottom: 10
+  container: { 
+    flex: 1, 
+    padding: 20, 
+    backgroundColor: '#f7f9fc'
   },
-  nome: { fontSize: 18, fontWeight: 'bold' },
-  email: { fontSize: 16, color: '#555' },
+
+  title: { 
+    fontSize: 32, 
+    fontWeight: 'bold', 
+    marginBottom: 25,
+    textAlign: 'center',
+    color: '#333'
+  },
+
+  card: {
+    backgroundColor: '#fff',
+    padding: 18,
+    borderRadius: 12,
+    marginBottom: 15,
+    elevation: 3,              // Android
+    shadowColor: '#000',       // iOS
+    shadowOpacity: 0.1,
+    shadowRadius: 6,
+    shadowOffset: { width: 0, height: 2 }
+  },
+
+  nome: { 
+    fontSize: 20, 
+    fontWeight: 'bold', 
+    color: '#333' 
+  },
+
+  email: { 
+    fontSize: 16, 
+    color: '#777',
+    marginTop: 5
+  },
 
   modalFundo: {
-    flex: 1, justifyContent: 'center', alignItems: 'center',
-    backgroundColor: 'rgba(0,0,0,0.5)'
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'rgba(0,0,0,0.45)'
   },
+
   modalContainer: {
-    width: '85%', backgroundColor: '#fff',
-    padding: 20, borderRadius: 10
+    width: '85%',
+    backgroundColor: '#fff',
+    padding: 25,
+    borderRadius: 15,
+    elevation: 10,
+    shadowColor: '#000',
+    shadowOpacity: 0.25,
+    shadowRadius: 10
   },
-  modalTitle: { fontSize: 18, fontWeight: 'bold', marginBottom: 10 },
+
+  modalTitle: {
+    fontSize: 22,
+    fontWeight: 'bold',
+    color: '#333',
+    marginBottom: 20,
+    textAlign: 'center'
+  },
+
   modalInput: {
-    borderWidth: 1, borderColor: '#ccc',
-    padding: 10, borderRadius: 5, marginBottom: 15
+    borderWidth: 1,
+    borderColor: '#ddd',
+    backgroundColor: '#fdfdfd',
+    padding: 14,
+    borderRadius: 10,
+    fontSize: 16,
+    marginBottom: 20
   },
+
   modalBtn: {
-    backgroundColor: '#0066ff', padding: 12,
-    borderRadius: 8, alignItems: 'center'
+    backgroundColor: '#4A90E2',
+    padding: 14,
+    borderRadius: 10,
+    alignItems: 'center',
+    elevation: 3,
   },
-  modalBtnTxt: { color: '#fff', fontWeight: 'bold' },
-  link: { textAlign: 'center', marginTop: 15, color: 'blue' }
+
+  modalBtnTxt: { 
+    color: '#fff', 
+    fontSize: 18,
+    fontWeight: 'bold' 
+  },
+
+  link: { 
+    textAlign: 'center', 
+    marginTop: 20, 
+    color: '#4A90E2',
+    fontSize: 16 
+  }
 });
